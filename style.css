@@ -1,0 +1,119 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani&display=swap'); */
+
+:root {
+	--all-side-padding: 4rem;
+	--header-height: 4rem;
+	--footer-height: 2rem;
+	--color-1: #333;
+	--color-2: #eee;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	/* border: 1px gray dotted; */
+}
+
+body {
+	font-family: 'Mukta Vaani', 'Roboto', 'Candara', sans-serif;
+	height: 100vh;
+}
+
+
+header {
+	padding: 0rem var(--all-side-padding);
+	min-height: var(--header-height);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color-1);
+	color: var(--color-2);
+}
+h1 {
+	text-align: center;
+}
+
+
+
+main {
+	padding: 2rem var(--all-side-padding);
+	min-height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+
+
+#container {
+	padding: 5px;
+	border: 1px solid #000000;
+	border-radius: 4px;
+}
+
+#para {
+	font-family: monospace;
+}
+
+
+#container > div {
+	display: flex;
+}
+
+#tools {
+	margin: 5px 5px 0px 0px;
+	padding: 5px;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+.object {
+	cursor: grab;
+	margin: 4px 2px;
+}
+.object:active {
+	cursor: grabbing;
+}
+#rect {
+	width: 30px;
+	height: 30px;
+	background-color: #CEE5D0;
+	border: 2px solid #94B49F;
+}
+#circle {
+	width: 30px;
+	height: 30px;
+	background-color: #CEE5D0;
+	border: 2px solid #94B49F;
+	border-radius: 50%;
+}
+
+
+#canvas-box {
+	position: relative;
+	height: 30rem;
+	background-color: #E8F6EF;
+	overflow: hidden;
+}
+
+#canvas {}
+
+#text-input {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+
+
+
+footer {
+	padding: 0rem var(--all-side-padding);
+	min-height: var(--footer-height);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color-1);
+	color: var(--color-2);
+}
+footer > p {
+	text-align: center;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<title>Drag & Drop Shapes</title>
+</head>
+<body>
+	<header>
+		<h1>Drag & Drop Shapes</h1>
+	</header>
+	<main>
+		<div id="container">
+			<p id="para">Mouse coordinates : (0,0)</p>
+			<div>
+				<div id="tools">
+					<div id="rect" class="object" draggable="true"></div>
+					<div id="circle" class="object" draggable="true"></div>
+				</div>
+				<div id="canvas-box">
+					<canvas id="canvas"></canvas>
+					<textarea id="text-input"></textarea>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p>Designed & developed by Vaibhav Jaiswar</p>
+	</footer>
+	<script type="text/javascript" src="./js/shapes/circle.js"></script>
+	<script type="text/javascript" src="./js/shapes/rect.js"></script>
+	<script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
